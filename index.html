@@ -16,6 +16,15 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ? Google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <!--? Tailwind custom class -->
@@ -23,40 +32,234 @@
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: {
+            lato: '"Lato", sans-serif',
+          },
           backgroundImage: {
-              'hero-img': "url('./image/hardy.png')",
-            },
+            "hero-img": "url('./images/banner3.png')",
+            "slider-img1": "url('./images/banner3.png')",
+            "slider-img2": "url('./images/banner4.png')",
+            "slider-img3": "url('./images/banner2.png')",
+            "slider-img4": "url('./images/banner1.png')",
+          },
           colors: {
-                dark1: "#000",
+            dark: "#121212",
+            watermelon: "#F85559",
           },
         },
       },
     };
   </script>
-  <body>
+  <body class="font-lato">
     <!--*======= start end ======*-->
 
-
     <!--*======= header start ======*-->
-    <header   style="background-image: url(./image/hardy.png);">
+    <header class="max-w-screen-xl mx-auto">
+      <!--todo navbar -->
+      <div class="navbar bg-watermelon rounded-full my-11">
+        <div class="navbar-start hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-xl text-white">
+            <li><a>Home</a></li>
+            <li><a>About Us</a></li>
+            <li><a>Shop</a></li>
+            <li><a>All Fruits</a></li>
+          </ul>
+        </div>
+        <div class="navbar-center">
+          <img src="./images/logo.png" alt="" />
+          <a class="btn btn-ghost font-extrabold text-4xl text-white">Fruit Burst</a>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-ghost btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              />
+            </svg>
+          </button>
+          <div class="dropdown hidden">
+            <label tabindex="0" class="btn btn-ghost btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h7"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a>Homepage</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>About</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--todo hero or banner -->
+      <div class="carousel w-full rounded-lg">
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="hero min-h-[600px]">
+            <div class="hero-overlay bg-blend-color-burn bg-hero-img"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                <button class="btn bg-watermelon border-none text-white text-xl hover:text-watermelon">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">❮</a> 
+            <a href="#slide2" class="btn btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="hero min-h-[600px]">
+            <div class="hero-overlay bg-blend-color-burn bg-hero-img"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                <button class="btn bg-watermelon border-none text-white text-xl hover:text-watermelon">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">❮</a> 
+            <a href="#slide3" class="btn btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">❯</a>
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class="hero min-h-[600px]">
+            <div class="hero-overlay bg-blend-color-burn bg-hero-img"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                <button class="btn bg-watermelon border-none text-white text-xl hover:text-watermelon">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">❮</a> 
+            <a href="#slide4" class="btn btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">❯</a>
+          </div>
+        </div> 
+        <div id="slide4" class="carousel-item relative w-full">
+          <div class="hero min-h-[600px]">
+            <div class="hero-overlay bg-blend-color-burn bg-hero-img"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                <button class="btn bg-watermelon border-none text-white text-xl hover:text-watermelon">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">❮</a> 
+            <a href="#slide1" class="btn btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">❯</a>
+          </div>
+        </div>
+      </div>
 
     </header>
     <!--*======= header start ======*-->
-<div class="w-full min-h-screen bg-hero-img">
-  hi
-</div>
 
     <!--*======= main start ======*-->
-    <main>
-    <!--*======= start ======*-->
-    <!--*======= end ======*-->
+    <main class="max-w-screen-xl mx-auto my-32">
+      <!--*======= Deal of day start ======*-->
+      <section class="">
 
+        <div class="flex justify-between">
+          <div class="">
+            <h3 class="text-5xl font-extrabold text-dark">Deal of the day</h3>
+            <p class="textorbg-orange-400 font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              days
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>
+              </span>
+              hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>
+              </span>
+              min
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:56;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+
+      <!--todo deal of day card wrapper -->
+      <div>
+        <div class="card w-96 bg-base-100 shadow-xl">
+          <figure class="px-10 pt-10">
+            <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title">12.90$ - 18.85$</h2>
+            <p>Apples</p>
+            <div class="rating rating-lg rating-half">
+              <input type="radio" name="rating-10" class="rating-hidden" />
+              <input type="radio" name="rating-10" class="bg-orange-400 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-orange-400 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-orange-400 mask mask-star-2 mask-half-1" checked />
+              <input type="radio" name="rating-10" class="bg-orange-400 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-orange-400 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-orange-400 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-orange-400 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-orange-400 mask mask-star-2 mask-half-2" />
+              <input type="radio" name="rating-10" class="bg-orange-400 mask mask-star-2 mask-half-1" />
+              <input type="radio" name="rating-10" class="bg-orange-400 mask mask-star-2 mask-half-2" />
+            </div>
+            <div class="card-actions">
+              <button class="btn btn-primary">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </section>
+      <!--*======= Deal of day end ======*-->
     </main>
     <!--*======= main end ======*-->
 
     <!--*======= footer start ======*-->
 
     <!--*=======  footer end ======*-->
-
   </body>
 </html>
