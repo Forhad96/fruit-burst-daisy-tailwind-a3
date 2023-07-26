@@ -32,9 +32,6 @@
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: {
-            lato: '"Lato", "sans-serif"',
-          },
           backgroundImage: {
             "hero-img": "url('./images/banner3.png')",
             "slider-img1": "url('./images/banner3.png')",
@@ -50,7 +47,13 @@
       },
     };
   </script>
-  <body class="font-lato">
+
+  <style>
+    .lato{
+      font-family: 'Lato', sans-serif;
+    }
+  </style>
+  <body class="">
     <!--*======= start end ======*-->
 
     <!--*======= header start ======*-->
@@ -70,7 +73,7 @@
           <a class="btn btn-ghost font-extrabold text-4xl text-white">Fruit Burst</a>
         </div>
         <div class="navbar-end">
-          <button class="btn btn-ghost btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">
+          <button class="btn btn-ghost btn-circle  text-white border-none">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-5 w-5"
@@ -118,8 +121,8 @@
       <!--todo hero or banner -->
       <div class="carousel w-full rounded-lg">
         <div id="slide1" class="carousel-item relative w-full">
-          <div class="hero max-h-96 lg:min-h-[600px]">
-            <div class="hero-overlay bg-cover bg-no-repeat bg-slider-img2 blur-sm"></div>
+          <div class="hero lg:min-h-[600px] bg-slider-img1" >
+            <div class="hero-overlay bg-opacity-40"></div>
             <div class="hero-content text-center text-neutral-content">
               <div class="">
                 <h1 class="mb-5 text-2xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
@@ -134,27 +137,79 @@
           </div>
         </div> 
         <div id="slide2" class="carousel-item relative w-full">
-
+          <div class="hero lg:min-h-[600px] bg-slider-img2" >
+            <div class="hero-overlay bg-opacity-40"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-2xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
+                <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                <button class="btn bg-watermelon border-none text-white text-xl hover:text-watermelon">Shop Now</button>
+              </div>
+            </div>
+          </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" class="btn btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">❮</a> 
             <a href="#slide3" class="btn btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">❯</a>
           </div>
         </div> 
         <div id="slide3" class="carousel-item relative w-full">
-
+          <div class="hero lg:min-h-[600px] bg-slider-img3" >
+            <div class="hero-overlay bg-opacity-40"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-2xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
+                <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                <button class="btn bg-watermelon border-none text-white text-xl hover:text-watermelon">Shop Now</button>
+              </div>
+            </div>
+          </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" class="btn btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">❮</a> 
             <a href="#slide4" class="btn btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">❯</a>
           </div>
         </div> 
         <div id="slide4" class="carousel-item relative w-full">
-
+          <div class="hero lg:min-h-[600px] bg-slider-img4" >
+            <div class="hero-overlay bg-opacity-40"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="">
+                <h1 class="mb-5 text-2xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
+                <p class="mb-5 text-xl">We supply highly quality organic products</p>
+                <button class="btn bg-watermelon border-none text-white text-xl hover:text-watermelon">Shop Now</button>
+              </div>
+            </div>
+          </div>
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide3" class="btn btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">❮</a> 
             <a href="#slide1" class="btn btn-circle  text-white border-none bg-[#121212] hover:text-[#121212]">❯</a>
           </div>
         </div>
       </div>
+      
+      <!-- large screen only section  -->
+      <div class="relative  -inset-y-32 z-10 hidden lg:block">
+        <div class="flex  items-center justify-around max-w-6xl mx-auto py-10 shadow-2xl rounded-lg bg-white">
+          <!-- fruit wrapper -->
+          <div class="text-center">
+            <img src="./images/fruit1.png" alt="">
+            <h5 class="text-xl font-medium">Strawberry</h5>
+          </div>
+          <div class="text-center">
+            <img src="./images/fruit2.png" alt="">
+            <h5 class="text-xl font-medium">Strawberry</h5>
+          </div>
+          <div class="text-center">
+            <img src="./images/fruit3.png" alt="">
+            <h5 class="text-xl font-medium">Strawberry</h5>
+          </div>
+          <div class="text-center">
+            <img src="./images/fruit4.png" alt="">
+            <h5 class="text-xl font-medium">Strawberry</h5>
+          </div>
+        </div>
+      </div>
+
+
 
     </header>
     <!--*======= header start ======*-->
