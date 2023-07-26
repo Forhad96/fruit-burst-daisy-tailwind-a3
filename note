@@ -8,3 +8,81 @@
     </div>
   </div>
 </div>
+
+
+
+<div class="bg-base-100 border rounded-sm p-8">
+  <figure class="flex justify-center">
+    <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center space-y-2">
+    <h2 class="text-2xl font-bold border-b-2 py-5">12.90$ - 18.85$</h2>
+    <p class="text-gray-500">Orange</p>
+    <div class="rating rating-md rating-half">
+      <input type="radio" name="orange" class="rating-hidden" />
+      <input type="radio" name="orange" class="bg-watermelon mask mask-star-2 mask-half-1" />
+      <input type="radio" name="orange" class="bg-watermelon mask mask-star-2 mask-half-2" />
+      <input type="radio" name="orange" class="bg-watermelon mask mask-star-2 mask-half-1" checked />
+      <input type="radio" name="orange" class="bg-watermelon mask mask-star-2 mask-half-2" />
+      <input type="radio" name="orange" class="bg-watermelon mask mask-star-2 mask-half-1" />
+      <input type="radio" name="orange" class="bg-watermelon mask mask-star-2 mask-half-2" />
+      <input type="radio" name="orange" class="bg-watermelon mask mask-star-2 mask-half-1" />
+      <input type="radio" name="orange" class="bg-watermelon mask mask-star-2 mask-half-2" />
+      <input type="radio" name="orange" class="bg-watermelon mask mask-star-2 mask-half-1" />
+      <input type="radio" name="orange" class="bg-watermelon mask mask-star-2 mask-half-2" />
+    </div>
+    <div class="card-actions">
+      <a class="link link-secondary">Details</a>
+    </div>
+  </div>
+</div>
+<div class="bg-base-100 border rounded-sm p-8">
+  <figure class="flex justify-center">
+    <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center space-y-2">
+    <h2 class="text-2xl font-bold border-b-2 py-5">12.90$ - 18.85$</h2>
+    <p class="text-gray-500">Red-Dragon</p>
+    <div class="rating rating-md rating-half">
+      <input type="radio" name="red-dragon" class="rating-hidden" />
+      <input type="radio" name="red-dragon" class="bg-watermelon mask mask-star-2 mask-half-1" />
+      <input type="radio" name="red-dragon" class="bg-watermelon mask mask-star-2 mask-half-2" />
+      <input type="radio" name="red-dragon" class="bg-watermelon mask mask-star-2 mask-half-1" checked />
+      <input type="radio" name="red-dragon" class="bg-watermelon mask mask-star-2 mask-half-2" />
+      <input type="radio" name="red-dragon" class="bg-watermelon mask mask-star-2 mask-half-1" />
+      <input type="radio" name="red-dragon" class="bg-watermelon mask mask-star-2 mask-half-2" />
+      <input type="radio" name="red-dragon" class="bg-watermelon mask mask-star-2 mask-half-1" />
+      <input type="radio" name="red-dragon" class="bg-watermelon mask mask-star-2 mask-half-2" />
+      <input type="radio" name="rating-10" class="bg-watermelon mask mask-star-2 mask-half-1" />
+      <input type="radio" name="rating-10" class="bg-watermelon mask mask-star-2 mask-half-2" />
+    </div>
+    <div class="card-actions">
+      <a class="link link-secondary">Details</a>
+    </div>
+  </div>
+</div>
+<div class="bg-base-100 border rounded-sm p-8">
+  <figure class="flex justify-center">
+    <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+  </figure>
+  <div class="card-body items-center text-center space-y-2">
+    <h2 class="text-2xl font-bold border-b-2 py-5">12.90$ - 18.85$</h2>
+    <p class="text-gray-500">Banana</p>
+    <div class="rating rating-md rating-half">
+      <input type="radio" name="banana" class="rating-hidden" />
+      <input type="radio" name="banana" class="bg-watermelon mask mask-star-2 mask-half-1" />
+      <input type="radio" name="banana" class="bg-watermelon mask mask-star-2 mask-half-2" />
+      <input type="radio" name="banana" class="bg-watermelon mask mask-star-2 mask-half-1" checked />
+      <input type="radio" name="banana" class="bg-watermelon mask mask-star-2 mask-half-2" />
+      <input type="radio" name="banana" class="bg-watermelon mask mask-star-2 mask-half-1" />
+      <input type="radio" name="banana" class="bg-watermelon mask mask-star-2 mask-half-2" />
+      <input type="radio" name="banana" class="bg-watermelon mask mask-star-2 mask-half-1" />
+      <input type="radio" name="banana" class="bg-watermelon mask mask-star-2 mask-half-2" />
+      <input type="radio" name="banana" class="bg-watermelon mask mask-star-2 mask-half-1" />
+      <input type="radio" name="banana" class="bg-watermelon mask mask-star-2 mask-half-2" />
+    </div>
+    <div class="card-actions">
+      <a class="link link-secondary">Details</a>
+    </div>
+  </div>
+</div>
